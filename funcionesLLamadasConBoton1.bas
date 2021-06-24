@@ -3,7 +3,7 @@ Sub copiaryPegar()
 
 Sheets("Hoja1").Select 've y activa la hoja 1
 Range("B6").Activate 'posicionate en la celda b6 y activala
-Range(ActiveCell, ActiveCell.Offset(0, 9)).Copy 'copia la celda b6 y 8 mas hacia la derecha
+Range(ActiveCell, ActiveCell.Offset(0, 9)).Copy 'copia la celda b6 y 9 mas hacia la derecha
 
 'copiado = Worksheets("Hoja1").Range(ActiveCell, ActiveCell.Offset(0, 5)).Copy
 
@@ -19,7 +19,7 @@ Call enviarDatos2 'envia los datos a google
 Sheets("Hoja1").Select 'selecciona la hoja 1
 
 Do While Not IsEmpty(ActiveCell) 'mientras la celda no este limpia
-Range(ActiveCell, ActiveCell.Offset(0, 9)).Copy 'selecciona donde se quedo la celda y dos m·s a la derecha
+Range(ActiveCell, ActiveCell.Offset(0, 9)).Copy 'selecciona donde se quedo la celda y dos m√°s a la derecha
 Sheets("Enviar").Select 'selecciona hoja enviar
 Range("A2").Select 'selecciona celda a2
 Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
@@ -65,8 +65,8 @@ Resultado = winHttpSolicitud.responseText
 End Sub
 
 Sub mensajeConfirmacion()
-Application.Speech.Speak ("Tus datos han sido enviados con Èxito") 'mensaje de voz
-MsgBox ("Tus datos han sido enviados con Èxito") ' mensaje de confirmaciÛn
+Application.Speech.Speak ("Tus datos han sido enviados con √©xito") 'mensaje de voz
+MsgBox ("Tus datos han sido enviados con √©xito") ' mensaje de confirmaci√≥n
 End Sub
 
 
